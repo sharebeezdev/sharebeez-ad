@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Advertising</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .card {
+            position: relative;
+            width: 300px;
+            height: 400px;
+            background-color: #1f1f1f;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .logo {
+            position: relative;
+            width: 150px; /* Increased size */
+            height: 150px; /* Increased size */
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* Enhanced shadow for 3D effect */
+            margin-bottom: 20px;
+            background-color: #000;
+            transition: transform 0.3s ease; /* Optional: Smooth scaling effect */
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .logo:hover {
+            transform: scale(1.1); /* Optional: Slightly enlarge on hover */
+        }
+
+        .share-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #333;
+            border: none;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            font-size: 1.2em;
+        }
+
+        .share-button:hover {
+            background-color: #444;
+        }
+
+        .title {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        .title a {
+            text-decoration: none; /* Removes the underline */
+            color: white; /* Sets the text color to white */
+        }
+
+        .tagline {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #888;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .button-group img {
+            width: 120px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .button-group img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <button class="share-button" onclick="window.open('http://clayganesha.org', '_blank')">🔗</button>
+    <div class="logo">
+        <img src="clayganesha.jpeg" alt="App Logo">
+    </div>
+    <h1 class="title">
+        <a href="http://clayganesha.org" target="_blank" rel="noopener noreferrer">
+          Clay Ganesha Org
+        </a>
+    </h1>
+    
+    <p class="tagline">Powered by Sharebeez app</p>
+    <div class="button-group">
+        <a href="https://play.google.com/store/apps/details?id=com.affirmtechnologies.sharebeez" target="_blank">
+            <img src="https://qrco.de/img/generator/app/google-en.png" alt="Download on Android">
+        </a>
+        <a href="https://apps.apple.com/in/app/sharebeez/id1660433187" target="_blank">
+            <img src="https://qrco.de/img/generator/app/apple-en.png" alt="Download on iOS">
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
